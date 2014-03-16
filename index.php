@@ -2,7 +2,7 @@
 
 $data = array();
 
-$type = $_GET["type"];
+$type = array_key_exists("type", $_GET) ? $_GET["type"] : null;
 
 if ($type == "youtube") {
 	$id = $_GET["id"];
