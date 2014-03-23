@@ -2,10 +2,10 @@
 
 $data = array();
 
-$type = array_key_exists("type", $_GET) ? $_GET["type"] : null;
+$type = array_key_exists('type', $_GET) ? $_GET['type'] : null;
 
-if ($type == "youtube") {
-	$id = $_GET["id"];
+if ($type == 'youtube') {
+	$id = $_GET['id'];
 }
 
 // output
