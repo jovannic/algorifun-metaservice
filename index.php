@@ -19,6 +19,8 @@ if ($type == 'youtube') {
 	$data['description'] = (string) $mediaGroup->description;
 	$data['views'] = (string) $xml->children('yt', true)->statistics[0]->attributes('', true)->viewCount[0];
 	$data['rating'] = (string) $xml->children('gd', true)->rating[0]->attributes('', true)->average[0];
+	$data['category'] = (string) $mediaGroup->category[0]->attributes('', true)->label[0];
+	$data['categoryTerm'] = (string) $mediaGroup->category[0];
 }
 
 // output
